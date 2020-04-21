@@ -25,7 +25,7 @@ const MovieList = props => {
       {movies.map(movie => (
         <>
           <MovieCard key={movie.id} movie={movie} />
-          <Link key={movie.id} to={`/movies/${movie.id}`}>Movie Details</Link>
+          <Link className='more-details' key={movie.id} to={`/movies/${movie.id}`}>Movie Details</Link>
         </>
       ))}
     </div>
